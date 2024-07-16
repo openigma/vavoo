@@ -507,7 +507,7 @@ class vavoo_config(Screen, ConfigListScreen):
             if self.v6 != cfg.ipv6.value:
                 self.ipv6()
             add_skin_font()
-                                                                                                                                                                              
+
             restartbox = self.session.openWithCallback(self.restartGUI, MessageBox, _('Settings saved successfully !\nyou need to restart the GUI\nto apply the new configuration!\nDo you want to Restart the GUI now?'), MessageBox.TYPE_YESNO)
             restartbox.setTitle(_('Restart GUI now?'))
         else:
@@ -518,7 +518,7 @@ class vavoo_config(Screen, ConfigListScreen):
             self.session.open(TryQuitMainloop, 3)
         else:
             self.close()
-                                  
+
 
     def extnok(self, answer=None):
         if answer is None:
