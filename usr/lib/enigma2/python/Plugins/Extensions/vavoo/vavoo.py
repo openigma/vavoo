@@ -78,13 +78,8 @@ import base64
 import re
 import json
 import requests
-                             
 
-                                            
-               
-                    
-                            
-                               
+
 
 try:
     from Tools.Directories import SCOPE_GUISKIN as SCOPE_SKIN
@@ -1556,7 +1551,6 @@ def autostart(reason, session=None, **kwargs):
 
 def get_next_wakeup():
     return -1
-
 
 
 # def add_skin_font():
